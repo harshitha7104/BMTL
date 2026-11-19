@@ -1,0 +1,71 @@
+original_sample_id,rock_id,rule_set,prediction_type,support_level,evidence_confidence,rejection_reasons
+NBCA24-14B_fresh1,NBCA24-14B,calcite / siderite,INFERRED,MODERATE,0.518,replicates of the same spot disagree
+NBCA24-14B_fresh1-1,NBCA24-14B,calcite / siderite,INFERRED,MODERATE,0.519,replicates of the same spot disagree
+NBCA24-14B_fresh1-2,NBCA24-14B,ankerite / dolomite / siderite,INFERRED,MODERATE,0.639,replicates of the same spot disagree
+NBCA24-14B_fresh1-3,NBCA24-14B,ankerite / dolomite,INFERRED,MODERATE,0.359,unlike other reference spectra (novel / out-of-distribution); replicates of the same spot disagree
+NBCA24-01_fresh1,NBCA24-01,ankerite / dolomite,INFERRED,HIGH,0.686,replicates of the same spot disagree
+NBCA24-01_fresh1-1,NBCA24-01,chrysotile_asbestos / dolomite / talc,INFERRED,MODERATE,0.589,replicates of the same spot disagree
+NBCA24-03_fresh1-1,NBCA24-03,chrysotile_asbestos / dolomite / talc,INFERRED,HIGH,0.679,replicates of the same spot disagree
+NBCA24-04A_weathered1,NBCA24-04A,ankerite / crocidolite_asbestos / dolomite,INFERRED,MODERATE,0.415,unlike other reference spectra (novel / out-of-distribution); replicates of the same spot disagree
+NBCA24-04A_weathered1-1,NBCA24-04A,calcite / chrysotile_asbestos / dolomite / talc,INFERRED,HIGH,0.724,replicates of the same spot disagree
+NBCA24-04C_weathered1-1,NBCA24-04C,chrysotile_asbestos / dolomite / talc,INFERRED,MODERATE,0.607,absorptions not shared by the most similar other-rock spectrum
+NBCA24-05_weathered1,NBCA24-05,calcite / dolomite / siderite / talc,INFERRED,MODERATE,0.378,unlike other reference spectra (novel / out-of-distribution); absorptions not shared by the most similar other-rock spectrum
+NBCA24-05_weathered1-1,NBCA24-05,ankerite / calcite / dolomite / siderite,INFERRED,MODERATE,0.463,"dark spectrum (low albedo): kept in data, not used as pseudo-label"
+NBCA24-05_weathered2,NBCA24-05,calcite / crocidolite_asbestos / dolomite / siderite / talc,INFERRED,MODERATE,0.584,absorptions not shared by the most similar other-rock spectrum
+NBCA24-05_weathered3,NBCA24-05,calcite / chrysotile_asbestos / dolomite / siderite / talc,INFERRED,MODERATE,0.599,absorptions not shared by the most similar other-rock spectrum
+NBCA24-05_weathered3-1,NBCA24-05,calcite / chrysotile_asbestos / crocidolite_asbestos / dolomite / siderite / talc,INFERRED,MODERATE,0.595,absorptions not shared by the most similar other-rock spectrum
+NBCA24-06_weathered1,NBCA24-06,ankerite / dolomite,INFERRED,MODERATE,0.504,"dark spectrum (low albedo): kept in data, not used as pseudo-label; replicates of the same spot disagree"
+NBCA24-06_weathered1-1,NBCA24-06,calcite / chrysotile_asbestos / crocidolite_asbestos / dolomite / talc,INFERRED,MODERATE,0.453,"dark spectrum (low albedo): kept in data, not used as pseudo-label"
+NBCA24-06_weathered1-2,NBCA24-06,calcite / chrysotile_asbestos / crocidolite_asbestos / dolomite / talc,INFERRED,MODERATE,0.362,unlike other reference spectra (novel / out-of-distribution); absorptions not shared by the most similar other-rock spectrum
+NBCA24-07_fresh1,NBCA24-07,calcite / chrysotile_asbestos / dolomite / siderite / talc,INFERRED,MODERATE,0.421,unlike other reference spectra (novel / out-of-distribution)
+NBCA24-07_fresh1-2,NBCA24-07,ankerite / dolomite,INFERRED,HIGH,0.672,replicates of the same spot disagree
+NBCA24-09A_weathered2-1,NBCA24-09A,ankerite / dolomite,INFERRED,HIGH,0.696,replicates of the same spot disagree
+NBCA24-09A_weathered2-2,NBCA24-09A,dolomite / siderite / talc,INFERRED,MODERATE,0.376,unlike other reference spectra (novel / out-of-distribution); conflicting evidence: alternative hypothesis almost equally supported
+NBCA24-09B_weathered1-2,NBCA24-09B,ankerite / calcite / crocidolite_asbestos / dolomite,INFERRED,MODERATE,0.555,absorptions not shared by the most similar other-rock spectrum
+NBCA24-09B_fresh1,NBCA24-09B,chrysotile_asbestos / dolomite / talc,INFERRED,MODERATE,0.542,replicates of the same spot disagree
+NBCA24-09B_fresh1-1,NBCA24-09B,ankerite / dolomite,INFERRED,HIGH,0.662,absorptions not shared by the most similar other-rock spectrum
+NBCA24-11C_weathered1,NBCA24-11C,ankerite / crocidolite_asbestos / dolomite / siderite,INFERRED,HIGH,0.542,"dark spectrum (low albedo): kept in data, not used as pseudo-label; replicates of the same spot disagree"
+NBCA24-11C_weathered1-1,NBCA24-11C,calcite / crocidolite_asbestos / dolomite / talc,INFERRED,MODERATE,0.63,replicates of the same spot disagree
+NBCA24-11D_fresh1-3,NBCA24-11D,calcite / crocidolite_asbestos / dolomite / talc,INFERRED,MODERATE,0.576,absorptions not shared by the most similar other-rock spectrum
+NBCA24-11D_weathered1,NBCA24-11D,calcite / dolomite / talc,INFERRED,MODERATE,0.405,unlike other reference spectra (novel / out-of-distribution); absorptions not shared by the most similar other-rock spectrum
+NBCA24-11D_weathered1-2,NBCA24-11D,calcite / crocidolite_asbestos / dolomite / talc,INFERRED,MODERATE,0.403,unlike other reference spectra (novel / out-of-distribution); absorptions not shared by the most similar other-rock spectrum
+NBCA24-11D_weathered3,NBCA24-11D,calcite / chrysotile_asbestos / crocidolite_asbestos / dolomite / talc,INFERRED,MODERATE,0.571,absorptions not shared by the most similar other-rock spectrum
+NBCA24-11E_weathered1,NBCA24-11E,ankerite / calcite / dolomite,INFERRED,HIGH,0.672,replicates of the same spot disagree
+NBCA24-11E_weathered1-1,NBCA24-11E,dolomite / talc,INFERRED,MODERATE,0.548,replicates of the same spot disagree
+NBCA24-15_weathered1,NBCA24-15,ankerite / crocidolite_asbestos / dolomite,INFERRED,MODERATE,0.464,"dark spectrum (low albedo): kept in data, not used as pseudo-label"
+NBCA24-12B_fresh1,NBCA24-12B,ankerite / crocidolite_asbestos / dolomite / siderite,INFERRED,HIGH,0.511,"dark spectrum (low albedo): kept in data, not used as pseudo-label"
+NBCA24-12B_fresh1-1,NBCA24-12B,ankerite / calcite / crocidolite_asbestos / dolomite,INFERRED,HIGH,0.526,"dark spectrum (low albedo): kept in data, not used as pseudo-label"
+NBCA24-12B_weathered2,NBCA24-12B,ankerite / dolomite,INFERRED,MODERATE,0.502,"dark spectrum (low albedo): kept in data, not used as pseudo-label"
+NBCA24-17_fresh2,NBCA24-17,ankerite / dolomite / siderite,INFERRED,MODERATE,0.511,"dark spectrum (low albedo): kept in data, not used as pseudo-label"
+NBOR24-02_w1,NBOR24-02,ankerite / dolomite,INFERRED,HIGH,0.571,"dark spectrum (low albedo): kept in data, not used as pseudo-label"
+NBOR24-05_f1,NBOR24-05,ankerite / calcite / dolomite,INFERRED,HIGH,0.541,"dark spectrum (low albedo): kept in data, not used as pseudo-label"
+NBOR24-05_w1,NBOR24-05,calcite / chrysotile_asbestos / dolomite / siderite / talc,INFERRED,MODERATE,0.45,unlike other reference spectra (novel / out-of-distribution)
+NBOR24-09_f1,NBOR24-09,ankerite / dolomite,INFERRED,MODERATE,0.332,unlike other reference spectra (novel / out-of-distribution); conflicting evidence: alternative hypothesis almost equally supported; absorptions not shared by the most similar other-rock spectrum
+NBOR24-09_w1,NBOR24-09,dolomite / talc,INFERRED,MODERATE,0.383,unlike other reference spectra (novel / out-of-distribution)
+NBOR24-09_w2,NBOR24-09,crocidolite_asbestos / dolomite,INFERRED,MODERATE,0.315,unlike other reference spectra (novel / out-of-distribution); conflicting evidence: alternative hypothesis almost equally supported; absorptions not shared by the most similar other-rock spectrum
+NBOR24-09_w3,NBOR24-09,epsomite,INFERRED,MODERATE,0.294,unlike other reference spectra (novel / out-of-distribution); conflicting evidence: alternative hypothesis almost equally supported; absorptions not shared by the most similar other-rock spectrum; replicates of the same spot disagree
+NBOR24-09_w3-1,NBOR24-09,dolomite,INFERRED,MODERATE,0.348,unlike other reference spectra (novel / out-of-distribution); absorptions not shared by the most similar other-rock spectrum; replicates of the same spot disagree
+NBOR24-11_f1,NBOR24-11,ankerite / dolomite / siderite,INFERRED,MODERATE,0.516,absorptions not shared by the most similar other-rock spectrum
+NBOR24-11_w1,NBOR24-11,ankerite / crocidolite_asbestos / dolomite / siderite,INFERRED,MODERATE,0.534,absorptions not shared by the most similar other-rock spectrum
+NBOR24-12_w1,NBOR24-12,calcite / dolomite / siderite / talc,INFERRED,MODERATE,0.362,unlike other reference spectra (novel / out-of-distribution)
+NBOR24-13_f1,NBOR24-13,ankerite / calcite / dolomite,INFERRED,MODERATE,0.634,absorptions not shared by the most similar other-rock spectrum
+NBOR24-13_w1,NBOR24-13,ankerite / calcite / dolomite / siderite,INFERRED,MODERATE,0.493,"dark spectrum (low albedo): kept in data, not used as pseudo-label"
+NBOR24-14A_f1,NBOR24-14A,ankerite / dolomite,INFERRED,MODERATE,0.369,unlike other reference spectra (novel / out-of-distribution); absorptions not shared by the most similar other-rock spectrum
+NBOR24-14A_w2,NBOR24-14A,ankerite / dolomite,INFERRED,MODERATE,0.449,unlike other reference spectra (novel / out-of-distribution)
+NBOR24-14A_w3,NBOR24-14A,calcite / dolomite / siderite / talc,INFERRED,MODERATE,0.404,unlike other reference spectra (novel / out-of-distribution)
+NBOR24-14B_f1,NBOR24-14B,ankerite / dolomite,INFERRED,MODERATE,0.355,unlike other reference spectra (novel / out-of-distribution); absorptions not shared by the most similar other-rock spectrum
+NBOR24-14B_f1-1,NBOR24-14B,ankerite / crocidolite_asbestos / dolomite / siderite,INFERRED,MODERATE,0.381,unlike other reference spectra (novel / out-of-distribution)
+NBOR24-14B_w1,NBOR24-14B,calcite,INFERRED,MODERATE,0.338,unlike other reference spectra (novel / out-of-distribution)
+NBCA24-14B_weathered1,NBCA24-14B,calcite / siderite,INFERRED,MODERATE,0.515,passed evidence checks but not selected (class balance cap of the demo set)
+NBCA24-02_weathered1,NBCA24-02,ankerite / dolomite,INFERRED,HIGH,0.613,passed evidence checks but not selected (class balance cap of the demo set)
+NBCA24-03_fresh1,NBCA24-03,ankerite / dolomite,INFERRED,MODERATE,0.556,passed evidence checks but not selected (class balance cap of the demo set)
+NBCA24-03_fresh1-2,NBCA24-03,ankerite / dolomite,INFERRED,MODERATE,0.563,passed evidence checks but not selected (class balance cap of the demo set)
+NBCA24-09B_fresh1-2,NBCA24-09B,ankerite / dolomite,INFERRED,MODERATE,0.604,passed evidence checks but not selected (class balance cap of the demo set)
+NBCA24-12A_weathered2,NBCA24-12A,ankerite / dolomite,INFERRED,HIGH,0.605,passed evidence checks but not selected (class balance cap of the demo set)
+NBCA24-14,NBCA24-14,ankerite / dolomite,INFERRED,MODERATE,0.639,passed evidence checks but not selected (class balance cap of the demo set)
+NBCA24-16_weathered1,NBCA24-16,ankerite / dolomite / siderite,INFERRED,HIGH,0.667,passed evidence checks but not selected (class balance cap of the demo set)
+NBCA24-17_fresh1,NBCA24-17,ankerite / calcite / dolomite,INFERRED,HIGH,0.654,passed evidence checks but not selected (class balance cap of the demo set)
+NBCA24-18_w1,NBCA24-18,ankerite / calcite / dolomite,INFERRED,HIGH,0.662,passed evidence checks but not selected (class balance cap of the demo set)
+NBCA24-19_w2,NBCA24-19,ankerite / calcite / dolomite,INFERRED,HIGH,0.641,passed evidence checks but not selected (class balance cap of the demo set)
+NBCA24-20_f1,NBCA24-20,ankerite / dolomite,INFERRED,MODERATE,0.617,passed evidence checks but not selected (class balance cap of the demo set)
+NBOR24-04_f1,NBOR24-04,ankerite / calcite / dolomite / siderite,INFERRED,MODERATE,0.577,passed evidence checks but not selected (class balance cap of the demo set)

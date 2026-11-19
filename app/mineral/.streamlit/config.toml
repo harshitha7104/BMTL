@@ -1,0 +1,12 @@
+# Security audit L-10 (docs/SECURITY_AUDIT_2026-11-17.md): this demo app has no login, so it must only be
+# reachable from this computer. Streamlit otherwise listens on every network interface.
+[server]
+address = "127.0.0.1"
+headless = true
+enableXsrfProtection = true
+enableCORS = true
+maxUploadSize = 10            # MB; spectra files are small
+
+[browser]
+gatherUsageStats = false      # no usage telemetry leaves this computer
+serverAddress = "localhost"

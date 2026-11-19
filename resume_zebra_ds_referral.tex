@@ -1,0 +1,115 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+\hypersetup{colorlinks=true, urlcolor=blue, linkcolor=blue}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.9in}
+\addtolength{\textheight}{2.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\raggedright\large\bfseries}{}{0em}{}[\vspace{-3pt}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+\pdfgentounicode=1
+
+\newcommand{\entry}[4]{%
+  \vspace{2pt}\noindent\textbf{#1}\hfill #2\\
+  #3\hfill #4\par\vspace{-1pt}}
+
+\newcommand{\projentry}[4]{%
+  \vspace{2pt}\noindent\textbf{#1}\hfill #2\\
+  #4\par\vspace{-1pt}}
+
+\setlist[itemize]{label=$\circ$, leftmargin=0.2in, itemsep=1pt, topsep=2pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Harshitha M P}\\[4pt]
+  \small
+  \href{mailto:harshitha71004@gmail.com}{harshitha71004@gmail.com}\quad
+  \href{tel:+918867476254}{+91 88674 76254}\quad
+  \href{https://harshitha7104.github.io/PORTFOLIO/}{Portfolio}\quad
+  \href{https://www.linkedin.com/in/harshitha-m-p-81b734262/}{LinkedIn}\quad
+  \href{https://github.com/harshitha7104}{GitHub}\quad
+  \href{https://leetcode.com/u/harshitha056/}{LeetCode}
+\end{center}
+
+\section{Education}
+\entry{Bangalore Institute of Technology (BIT), Bangalore}{2023--2027}{B.E. in Computer Science and Engineering}{CGPA: 8.0/10}
+
+\section{Work Experience}
+
+\entry{ACE Green Recycling, Bengaluru}{Sept 2026 -- Present}{AI Engineer Intern (Founding AI Engineer Cohort)}{}
+\begin{itemize}
+  \small
+  \item Researched AI-driven, non-destructive estimation of Ni, Co and Li in battery black mass from handheld XRF readings; built and compared \textbf{multiple model prototypes} and developed a \textbf{validation framework against ICP-OES laboratory reference results}, using \textbf{leave-one-sample-out evaluation} and \textbf{uncertainty bands} so accuracy is never reported in-sample.
+  \item Worked with small, messy real-world data: labelled every output as \textbf{Observed, Inferred or Unknown}, handled censored ``$<$LOD'' readings explicitly, and kept a model only when it beat the raw instrument out-of-sample.
+  \item Designed and built a \textbf{multimodal (vision + LLM) assessment pipeline} for the Scrap Evidence Capture \& Assessment MVP: structured outputs, image-quality checks, confidence scoring and automatic escalation to human review.
+  \item Created a \textbf{10-case stress-test matrix} (blurred, burnt, mixed and conflicting evidence); measured hallucinations, confidence calibration, latency, cost and reliability, documenting defects to drive each improvement cycle.
+  \item Now productionizing the selected approach: finalizing the model pipeline, hardening it for reliability and driving it through \textbf{deployment}, while defining requirements and acceptance criteria with stakeholders.
+\end{itemize}
+
+\entry{OpenIntervue (Live Project)}{May 2025 -- Jul 2025}{AI Product Testing Associate}{}
+\begin{itemize}
+  \small
+  \item Tested AI-powered assessment workflows across \textbf{8+ engineering domains}, analyzing output quality and documenting defects through structured bug reports, contributing to a \textbf{32\% reduction in false positives}.
+\end{itemize}
+
+\section{Projects}
+
+\projentry{ThreatLens: Explainable Intrusion Detection System}{\href{https://github.com/harshitha7104/Threat-Lens}{GitHub}}{}{\small FastAPI, React, PostgreSQL, WebSockets, Docker, Nginx, Ollama, Mistral}
+\begin{itemize}
+  \small
+  \item Real-time, explainable intrusion detection that surfaces brute-force attacks, port scans, request floods and unusual access patterns in noisy application logs.
+  \item Combines behavioral analysis, configurable thresholds and dynamic 0--100 risk scoring (an \textbf{anomaly detection} approach), streaming to a live dashboard with threat trends, high-risk user rankings and LLM-generated explanations and mitigations.
+\end{itemize}
+
+\projentry{Scoutly: AI Job Discovery \& Outreach Workspace}{\href{https://github.com/harshitha7104/cold-email-agent}{GitHub}}{}{\small Python, FastAPI, React, TypeScript, SQLite, LangGraph, Groq, Ollama}
+\begin{itemize}
+  \small
+  \item Local-first \textbf{agentic} workspace that automates role discovery, fit ranking and recruiter-email drafting, with human review before anything is sent.
+  \item Pulls roles from Greenhouse, Lever and Jooble, ranks them with hard filters and explainable fit scoring (evidence and gaps), and drafts grounded emails with \textbf{LangGraph}; a background queue with durable run IDs gives live progress, partial-failure handling and recovery of interrupted runs.
+\end{itemize}
+
+\projentry{Corporate Carpool}{\href{https://github.com/harshitha7104/corporate-carpool}{GitHub}}{}{\small React, Vite, Node.js, Express, MongoDB, Lovable}
+\begin{itemize}
+  \small
+  \item Corporate carpooling product where employees share ride offers and trip details in one place; REST APIs on Express persist data in MongoDB.
+\end{itemize}
+
+\section{Skills}
+\begin{itemize}
+  \small
+  \item \textbf{Data \& ML:} Python, SQL, Excel, Data Analysis, Model Validation \& Evaluation, Uncertainty Estimation, Anomaly Detection, Explainability, Pytest, Power BI, Streamlit
+  \item \textbf{GenAI \& Agents:} LLM Applications, LangGraph, Claude API, Ollama, Mistral, Prompt Engineering, RAG, Structured Outputs, Hallucination Analysis, Confidence Scoring \& Escalation, Human-in-the-Loop
+  \item \textbf{Development:} Python, C++, JavaScript, TypeScript, React, FastAPI, Node.js, Express, REST APIs, WebSockets, PostgreSQL, SQLite, MongoDB
+  \item \textbf{Tools \& Fundamentals:} Git/GitHub, Docker, Nginx, DSA, OOP, DBMS, Operating Systems, Computer Networks
+\end{itemize}
+
+\section{Achievements}
+\begin{itemize}
+  \small
+  \item \textbf{iSolve Hackathon} Bronze (team lead); \textbf{Ideaverse 2025} Runner-Up; \textbf{200+ DSA problems} on LeetCode (rating $\sim$1476).
+\end{itemize}
+
+\end{document}

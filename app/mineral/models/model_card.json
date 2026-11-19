@@ -1,0 +1,73 @@
+{
+  "version": 2,
+  "created": "2026-10-08T23:40:37",
+  "sklearn_version": "1.9.1",
+  "source_file": "68026941d4be0210cde07d8c.csv",
+  "preprocess_config": {
+    "range_nm": [
+      400.0,
+      2500.0
+    ],
+    "step_nm": 1.0,
+    "smooth_window_nm": 11,
+    "smooth_polyorder": 2,
+    "max_gap_nm": 10.0,
+    "edge_tolerance_nm": 5.0
+  },
+  "vector_bin_nm": 10,
+  "fit_level": "measurement (replicates averaged)",
+  "n_fit_units": 94,
+  "ood_similarity_threshold": 0.8129980919202898,
+  "random_state": 42,
+  "pca_components": 6,
+  "pca_explained_variance": 0.9547153787431106,
+  "kmeans_k": 2,
+  "k_selection": [
+    {
+      "k": 2,
+      "silhouette": 0.5673531259575411,
+      "inertia": 60.10064038261811
+    },
+    {
+      "k": 3,
+      "silhouette": 0.2967857443679883,
+      "inertia": 48.70449575804919
+    },
+    {
+      "k": 4,
+      "silhouette": 0.332815877398276,
+      "inertia": 39.11800948670706
+    },
+    {
+      "k": 5,
+      "silhouette": 0.3345256464636205,
+      "inertia": 29.937489104812446
+    },
+    {
+      "k": 6,
+      "silhouette": 0.31764661696744617,
+      "inertia": 24.826535238250504
+    },
+    {
+      "k": 7,
+      "silhouette": 0.3283965381551054,
+      "inertia": 21.46015471494457
+    },
+    {
+      "k": 8,
+      "silhouette": 0.3317556854996883,
+      "inertia": 19.20481181510308
+    },
+    {
+      "k": 9,
+      "silhouette": 0.3170211411322283,
+      "inertia": 17.15180895515905
+    },
+    {
+      "k": 10,
+      "silhouette": 0.313549560108807,
+      "inertia": 15.280840450491883
+    }
+  ],
+  "note": "Unsupervised model: no labels were used or learned. Rule-based hypotheses are pseudo-labels, not ground truth."
+}

@@ -1,0 +1,89 @@
+{
+  "inventory_path": "D:/workspace/data/evaluations/phase3/phase3_data_inventory.json",
+  "quality_audit_path": "D:/workspace/data/evaluations/phase3/phase3_quality_audit.jsonl",
+  "duplicate_report_path": "D:/workspace/data/evaluations/phase3/phase3_duplicate_report.json",
+  "label_audit_path": "D:/workspace/data/evaluations/phase3/phase3_label_audit.jsonl",
+  "master_manifest_path": "D:/workspace/data/evaluations/phase3/phase3_master_manifest.jsonl",
+  "evaluation_dataset_path": "D:/workspace/data/evaluations/phase3/evaluation_dataset_v1.jsonl",
+  "quality_status_counts": {
+    "PASS": 8290,
+    "WARN": 3231
+  },
+  "invalid_images": 0,
+  "duplicate_groups": 723,
+  "label_summary": {
+    "record_count": 11521,
+    "source_labeled_record_count": 11521,
+    "missing_source_label_count": 0,
+    "verified_ground_truth_record_count": 0,
+    "inferred_label_record_count": 0,
+    "unverified_source_label_record_count": 11521,
+    "conflicting_metadata_record_count": 0,
+    "explicit_multi_material_annotation_count": 0,
+    "explicit_ambiguity_annotation_count": 0,
+    "category_counts": {
+      "automobile wastes": 1089,
+      "battery waste": 1061,
+      "E-waste": 1560,
+      "glass waste": 1278,
+      "light bulbs": 525,
+      "metal waste": 1539,
+      "organic waste": 1112,
+      "paper waste": 1713,
+      "plastic waste": 1644
+    },
+    "ground_truth_limitation": "Directory/manifest category names are source labels only. No expert, laboratory, or human-verified ground truth was found in project annotations; no labels were upgraded, inferred, or fabricated."
+  },
+  "embedding_alignment": {
+    "manifest_valid_image_count": 11521,
+    "embedding_path_row_count": 11521,
+    "embedding_array_shape": [
+      11521,
+      384
+    ],
+    "status_array_length": 11521,
+    "embedded_status_count": 11521,
+    "cluster_assignment_count": 11521,
+    "aligned_valid_path_count": 11521,
+    "missing_manifest_paths": [],
+    "extra_embedding_paths": [],
+    "not_successfully_embedded_paths": [],
+    "duplicate_embedding_paths": [],
+    "norm_mean": 1.0,
+    "norm_min": 0.9999998807907104,
+    "norm_max": 1.0000001192092896,
+    "within_unit_norm_tolerance_count": 11521,
+    "unit_norm_tolerance": 0.02,
+    "cluster_assignment_missing_paths": [],
+    "cluster_assignment_extra_paths": [],
+    "verified": true
+  },
+  "evaluation_count": 295,
+  "evaluation_category_coverage": {
+    "E-waste": 28,
+    "automobile wastes": 28,
+    "battery waste": 31,
+    "glass waste": 47,
+    "light bulbs": 28,
+    "metal waste": 40,
+    "organic waste": 30,
+    "paper waste": 34,
+    "plastic waste": 29
+  },
+  "evaluation_selection_reason_counts": {
+    "automated_quality_warning_or_review": 25,
+    "cluster_representative_candidate": 4,
+    "deterministic_source_category_coverage": 225,
+    "duplicate_or_near_duplicate_risk": 25,
+    "low_cluster_boundary_margin_candidate_for_review": 25
+  },
+  "duplicate_groups_spanning_original_splits": 250,
+  "future_split_counts": {
+    "train": 7631,
+    "validation": 1324,
+    "test": 2566
+  },
+  "leakage_check_passed": true,
+  "training_readiness": "NOT_READY",
+  "labels_used_for_embedding_or_clustering": false
+}

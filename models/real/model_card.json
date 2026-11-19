@@ -1,0 +1,511 @@
+{
+  "trained_on": "2026-11-17",
+  "banner": "REAL COMPANY DATA \u2014 9 ICP-REFERENCED SAMPLES; SMALL-SAMPLE ESTIMATES, NOT A VALIDATED METHOD",
+  "data": "data\\processed\\real",
+  "evaluation": "leave-one-sample-out",
+  "model_sha256": "879b8e085091e3d97a89020f7dc86e5bd2f75721497daa20f8a1c064cd16f49c",
+  "element_models": {
+    "factory:Ni": {
+      "stage": "proportional",
+      "a": 0.0,
+      "b": 0.6011736964486533,
+      "band_90": 1.708785201771256,
+      "loso_mae_raw": 6.546385300683976,
+      "loso_mae_linear": 0.7589226413345688,
+      "loso_mae_linear_augmented": 0.7645753198344524,
+      "n_samples": 8,
+      "n_readings": 12,
+      "n_augmented_rows": 0,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "loso_mae_proportional": 0.6809298603564704,
+      "nested_mae_selected": 0.6809298603564704,
+      "nested_picks": {
+        "proportional": 8
+      }
+    },
+    "factory:Co": {
+      "stage": "linear",
+      "a": 1.5755720905753263,
+      "b": 0.6199120825498269,
+      "band_90": 3.8922834337614827,
+      "loso_mae_raw": 4.99992581149737,
+      "loso_mae_linear": 1.6102416531085366,
+      "loso_mae_linear_augmented": 1.6077230069348296,
+      "n_samples": 8,
+      "n_readings": 12,
+      "n_augmented_rows": 0,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "nested_picks": {
+        "matrix": 2,
+        "proportional": 4,
+        "linear": 2
+      },
+      "nested_mae_search": 2.0368576731516908
+    },
+    "factory:Mn": {
+      "stage": "linear",
+      "a": -0.29101712115495504,
+      "b": 0.8642850246126949,
+      "band_90": 1.228278139099126,
+      "loso_mae_raw": 1.3539779190381365,
+      "loso_mae_linear": 0.45887589132510254,
+      "loso_mae_linear_augmented": 0.4560427612594606,
+      "n_samples": 8,
+      "n_readings": 12,
+      "n_augmented_rows": 0,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "nested_picks": {
+        "loglinear": 7,
+        "proportional": 1
+      },
+      "nested_mae_search": 0.49277706910452435
+    },
+    "factory:Fe": {
+      "stage": "linear",
+      "a": 0.22769045242672242,
+      "b": 0.690106309878719,
+      "band_90": 0.914422272262527,
+      "loso_mae_raw": 1.4593120242128765,
+      "loso_mae_linear": 0.4059227086870381,
+      "loso_mae_linear_augmented": 0.3982363704697589,
+      "n_samples": 8,
+      "n_readings": 12,
+      "n_augmented_rows": 0,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "nested_picks": {
+        "linear": 7,
+        "passthrough": 1
+      },
+      "nested_mae_search": 1.4951423373655615
+    },
+    "factory:Cu": {
+      "stage": "passthrough",
+      "a": 0.0,
+      "b": 1.0,
+      "band_90": 2.037150000000001,
+      "loso_mae_raw": 0.6434087170759838,
+      "loso_mae_linear": 0.8352574759640357,
+      "loso_mae_linear_augmented": 0.8340404666941087,
+      "n_samples": 8,
+      "n_readings": 12,
+      "n_augmented_rows": 0,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "nested_picks": {
+        "passthrough": 3,
+        "loglinear": 5
+      },
+      "nested_mae_search": 0.7918309920463292
+    },
+    "factory:Al": {
+      "stage": "passthrough",
+      "a": 0.0,
+      "b": 1.0,
+      "band_90": 0.8024829515792388,
+      "loso_mae_raw": 0.42768018456536727,
+      "loso_mae_linear": 0.775313801063705,
+      "loso_mae_linear_augmented": 0.7750923215560174,
+      "n_samples": 8,
+      "n_readings": 12,
+      "n_augmented_rows": 0,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "nested_picks": {
+        "passthrough": 7,
+        "proportional": 1
+      },
+      "nested_mae_search": 0.4744689077111701
+    },
+    "factory:P": {
+      "stage": "linear",
+      "a": -0.7504189258736017,
+      "b": 1.4119268976565822,
+      "band_90": 0.5399489754625183,
+      "loso_mae_raw": 0.817718098227183,
+      "loso_mae_linear": 0.1583819747764846,
+      "loso_mae_linear_augmented": 0.16646757995112307,
+      "n_samples": 8,
+      "n_readings": 12,
+      "n_augmented_rows": 0,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "nested_picks": {
+        "linear": 6,
+        "passthrough": 1,
+        "loglinear": 1
+      },
+      "nested_mae_search": 8.215504763476972
+    },
+    "type_standardised:Ni": {
+      "stage": "proportional",
+      "a": 0.0,
+      "b": 0.9510722006035913,
+      "band_90": 1.8606543552312653,
+      "loso_mae_raw": 1.0433999999999999,
+      "loso_mae_linear": 0.9974900323446848,
+      "loso_mae_linear_augmented": 1.0075132399726483,
+      "n_samples": 8,
+      "n_readings": 18,
+      "n_augmented_rows": 0,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "loso_mae_proportional": 0.8777072066573415,
+      "nested_mae_selected": 0.8777072066573415,
+      "nested_picks": {
+        "proportional": 8
+      }
+    },
+    "type_standardised:Co": {
+      "stage": "passthrough",
+      "a": 0.0,
+      "b": 1.0,
+      "band_90": 2.205329999999998,
+      "loso_mae_raw": 1.2717111111111103,
+      "loso_mae_linear": 1.6575706737863178,
+      "loso_mae_linear_augmented": 1.667904535088874,
+      "n_samples": 8,
+      "n_readings": 18,
+      "n_augmented_rows": 0,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "nested_picks": {
+        "proportional": 1,
+        "passthrough": 5,
+        "matrix": 1,
+        "loglinear": 1
+      },
+      "nested_mae_search": 1.978737206501524
+    },
+    "type_standardised:Mn": {
+      "stage": "proportional",
+      "a": 0.0,
+      "b": 0.9424376445272336,
+      "band_90": 1.3330840205733592,
+      "loso_mae_raw": 0.4787277777777778,
+      "loso_mae_linear": 0.4482632127666862,
+      "loso_mae_linear_augmented": 0.44833368508684174,
+      "n_samples": 8,
+      "n_readings": 18,
+      "n_augmented_rows": 0,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "loso_mae_proportional": 0.42830125063176144,
+      "nested_mae_selected": 0.4283012506317614,
+      "nested_picks": {
+        "proportional": 8
+      }
+    },
+    "type_standardised:Fe": {
+      "stage": "passthrough",
+      "a": 0.0,
+      "b": 1.0,
+      "band_90": 0.36495000000000005,
+      "loso_mae_raw": 0.21690000000000023,
+      "loso_mae_linear": 0.2494389213484146,
+      "loso_mae_linear_augmented": 0.24868621619688103,
+      "n_samples": 8,
+      "n_readings": 18,
+      "n_augmented_rows": 0,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "nested_picks": {
+        "passthrough": 8
+      },
+      "nested_mae_search": 0.21690000000000023
+    },
+    "type_standardised:Cu": {
+      "stage": "passthrough",
+      "a": 0.0,
+      "b": 1.0,
+      "band_90": 0.6798800000000006,
+      "loso_mae_raw": 0.36736111111111114,
+      "loso_mae_linear": 0.5231584770146147,
+      "loso_mae_linear_augmented": 0.5236724441577241,
+      "n_samples": 8,
+      "n_readings": 18,
+      "n_augmented_rows": 0,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "nested_picks": {
+        "passthrough": 6,
+        "proportional": 1,
+        "matrix": 1
+      },
+      "nested_mae_search": 0.6703127529682519
+    },
+    "type_standardised:Al": {
+      "stage": "linear",
+      "a": 0.313161891841146,
+      "b": 0.42380201573079374,
+      "band_90": 1.8874632876685558,
+      "loso_mae_raw": 1.1036707232112142,
+      "loso_mae_linear": 0.6865234210613476,
+      "loso_mae_linear_augmented": 0.6841361712065708,
+      "n_samples": 8,
+      "n_readings": 18,
+      "n_augmented_rows": 0,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "nested_picks": {
+        "proportional": 7,
+        "matrix": 1
+      },
+      "nested_mae_search": 0.8382030925275494
+    },
+    "type_standardised:P": {
+      "stage": "passthrough",
+      "a": 0.0,
+      "b": 1.0,
+      "band_90": 0.40568000000000004,
+      "loso_mae_raw": 0.14356111111111114,
+      "loso_mae_linear": 0.20202996077070937,
+      "loso_mae_linear_augmented": 0.2030630672328128,
+      "n_samples": 8,
+      "n_readings": 18,
+      "n_augmented_rows": 0,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "nested_picks": {
+        "passthrough": 7,
+        "linear": 1
+      },
+      "nested_mae_search": 0.15903670806764447
+    }
+  },
+  "lithium": {
+    "factory": {
+      "k_li_per_metal_atom": 0.8495783561700748,
+      "band_90": 0.8560483226311567,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "method": "per_metal",
+      "loso_mae_one_factor": 0.5380325142268213,
+      "loso_mae_per_metal": 0.43043343507088744,
+      "k_per_metal": {
+        "Ni": 0.95905,
+        "Co": 0.77947,
+        "Mn": 0.78462,
+        "FeP": 0.89266
+      }
+    },
+    "type_standardised": {
+      "k_li_per_metal_atom": 0.8700980253714314,
+      "band_90": 0.7490331660738605,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "method": "per_metal",
+      "loso_mae_one_factor": 0.5019243451281012,
+      "loso_mae_per_metal": 0.4309984440879355,
+      "k_per_metal": {
+        "Ni": 0.9456,
+        "Co": 0.81709,
+        "Mn": 0.83577,
+        "FeP": 0.89184
+      }
+    }
+  },
+  "detector": {
+    "n_labelled_readings": 40,
+    "n_groups": 28,
+    "classes": {
+      "NMC": 26,
+      "LCO": 6,
+      "INSTRUMENT_MODE_ARTIFACT": 4,
+      "LFP": 2,
+      "NOT_BLACK_MASS_LEAD": 2
+    },
+    "accuracy_on_decided": 1.0,
+    "abstention_rate": 0.025,
+    "per_class_recall": {
+      "INSTRUMENT_MODE_ARTIFACT": 0.75,
+      "LCO": 1.0,
+      "LFP": 1.0,
+      "NMC": 1.0,
+      "NOT_BLACK_MASS_LEAD": 1.0
+    },
+    "evaluation": "leave-one-group-out (all readings of one physical sample / bag held out together)",
+    "variant_comparison": {
+      "real_only": {
+        "accuracy_on_decided": 1.0,
+        "abstention_rate": 0.025,
+        "extra_training_rows": 0,
+        "per_class_recall": {
+          "INSTRUMENT_MODE_ARTIFACT": 0.75,
+          "LCO": 1.0,
+          "LFP": 1.0,
+          "NMC": 1.0,
+          "NOT_BLACK_MASS_LEAD": 1.0
+        }
+      },
+      "real+augmented": {
+        "accuracy_on_decided": 1.0,
+        "abstention_rate": 0.025,
+        "extra_training_rows": 800,
+        "per_class_recall": {
+          "INSTRUMENT_MODE_ARTIFACT": 0.75,
+          "LCO": 1.0,
+          "LFP": 1.0,
+          "NMC": 1.0,
+          "NOT_BLACK_MASS_LEAD": 1.0
+        }
+      },
+      "real+synthetic_v2": {
+        "accuracy_on_decided": 1.0,
+        "abstention_rate": 0.15,
+        "extra_training_rows": 705,
+        "per_class_recall": {
+          "INSTRUMENT_MODE_ARTIFACT": 0.75,
+          "LCO": 0.6666666666666666,
+          "LFP": 1.0,
+          "NMC": 0.8846153846153846,
+          "NOT_BLACK_MASS_LEAD": 1.0
+        }
+      },
+      "real+augmented+synthetic_v2": {
+        "accuracy_on_decided": 1.0,
+        "abstention_rate": 0.125,
+        "extra_training_rows": 1505,
+        "per_class_recall": {
+          "INSTRUMENT_MODE_ARTIFACT": 0.75,
+          "LCO": 0.6666666666666666,
+          "LFP": 1.0,
+          "NMC": 0.9230769230769231,
+          "NOT_BLACK_MASS_LEAD": 1.0
+        }
+      }
+    },
+    "selected_variant": "real_only"
+  }
+}

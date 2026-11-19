@@ -1,0 +1,94 @@
+{
+  "taxonomy_version": "source-category-taxonomy-v1",
+  "scope": "Data-driven inventory of existing source categories; not a verified material ontology.",
+  "verified_material_composition_claims": 0,
+  "categories": [
+    {
+      "category": "automobile wastes",
+      "subcategory": "automobile wastes",
+      "source_evidence": "Existing source category directory/Phase A manifest label only",
+      "record_count": 1089,
+      "label_confidence": "UNVERIFIED_SOURCE_LABEL",
+      "ground_truth_verified": false,
+      "ambiguity_notes": "Category semantics have not been independently verified. A single source label does not establish purity, composition, grade, or whether an image contains mixed materials."
+    },
+    {
+      "category": "battery waste",
+      "subcategory": "battery waste",
+      "source_evidence": "Existing source category directory/Phase A manifest label only",
+      "record_count": 1061,
+      "label_confidence": "UNVERIFIED_SOURCE_LABEL",
+      "ground_truth_verified": false,
+      "ambiguity_notes": "Category semantics have not been independently verified. A single source label does not establish purity, composition, grade, or whether an image contains mixed materials."
+    },
+    {
+      "category": "E-waste",
+      "subcategory": "E-waste",
+      "source_evidence": "Existing source category directory/Phase A manifest label only",
+      "record_count": 1560,
+      "label_confidence": "UNVERIFIED_SOURCE_LABEL",
+      "ground_truth_verified": false,
+      "ambiguity_notes": "Category semantics have not been independently verified. A single source label does not establish purity, composition, grade, or whether an image contains mixed materials."
+    },
+    {
+      "category": "glass waste",
+      "subcategory": "glass waste",
+      "source_evidence": "Existing source category directory/Phase A manifest label only",
+      "record_count": 1278,
+      "label_confidence": "UNVERIFIED_SOURCE_LABEL",
+      "ground_truth_verified": false,
+      "ambiguity_notes": "Category semantics have not been independently verified. A single source label does not establish purity, composition, grade, or whether an image contains mixed materials."
+    },
+    {
+      "category": "light bulbs",
+      "subcategory": "light bulbs",
+      "source_evidence": "Existing source category directory/Phase A manifest label only",
+      "record_count": 525,
+      "label_confidence": "UNVERIFIED_SOURCE_LABEL",
+      "ground_truth_verified": false,
+      "ambiguity_notes": "Category semantics have not been independently verified. A single source label does not establish purity, composition, grade, or whether an image contains mixed materials."
+    },
+    {
+      "category": "metal waste",
+      "subcategory": "metal waste",
+      "source_evidence": "Existing source category directory/Phase A manifest label only",
+      "record_count": 1539,
+      "label_confidence": "UNVERIFIED_SOURCE_LABEL",
+      "ground_truth_verified": false,
+      "ambiguity_notes": "Category semantics have not been independently verified. A single source label does not establish purity, composition, grade, or whether an image contains mixed materials."
+    },
+    {
+      "category": "organic waste",
+      "subcategory": "organic waste",
+      "source_evidence": "Existing source category directory/Phase A manifest label only",
+      "record_count": 1112,
+      "label_confidence": "UNVERIFIED_SOURCE_LABEL",
+      "ground_truth_verified": false,
+      "ambiguity_notes": "Category semantics have not been independently verified. A single source label does not establish purity, composition, grade, or whether an image contains mixed materials."
+    },
+    {
+      "category": "paper waste",
+      "subcategory": "paper waste",
+      "source_evidence": "Existing source category directory/Phase A manifest label only",
+      "record_count": 1713,
+      "label_confidence": "UNVERIFIED_SOURCE_LABEL",
+      "ground_truth_verified": false,
+      "ambiguity_notes": "Category semantics have not been independently verified. A single source label does not establish purity, composition, grade, or whether an image contains mixed materials."
+    },
+    {
+      "category": "plastic waste",
+      "subcategory": "plastic waste",
+      "source_evidence": "Existing source category directory/Phase A manifest label only",
+      "record_count": 1644,
+      "label_confidence": "UNVERIFIED_SOURCE_LABEL",
+      "ground_truth_verified": false,
+      "ambiguity_notes": "Category semantics have not been independently verified. A single source label does not establish purity, composition, grade, or whether an image contains mixed materials."
+    }
+  ],
+  "unmapped_or_unknown_count": 0,
+  "domain_limitations": [
+    "The source label 'metal waste' is not a verified ferrous/non-ferrous distinction.",
+    "No copper-only assumption is made; category names are preserved verbatim.",
+    "Mixed-material, mineral, hazard, alloy, and purity facts are unknown unless separately evidenced."
+  ]
+}

@@ -1,0 +1,15 @@
+# Inputs for the production image lock (security audit M-07). Do not install this file directly.
+# The image installs requirements-image.lock with --require-hashes (every package pinned + SHA-256 checked).
+# Regenerate the lock after changing any requirements*.txt (run in app/backend, with uv):
+#   uv pip compile requirements-image.in -c requirements-tested.txt --generate-hashes --no-header
+#     --python-version 3.13 --python-platform x86_64-manylinux_2_28
+#     --index-url https://pypi.org/simple --extra-index-url https://download.pytorch.org/whl/cpu
+#     --index-strategy unsafe-best-match -o requirements-image.lock
+# requirements-tested.txt = `pip freeze` of the venv the test suite passed on, so the image runs the tested versions.
+-r requirements.txt
+-r requirements-copilot.txt
+# requirements-phase-b.txt, with the CPU builds of torch for the server image
+torch==2.7.1+cpu
+torchvision==0.22.1+cpu
+scikit-learn>=1.6,<2
+matplotlib>=3.9,<4

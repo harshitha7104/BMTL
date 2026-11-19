@@ -1,0 +1,11 @@
+# BMTL real-data pipeline (src/realdata, src/realmodels) - root .venv, Python 3.13
+pandas>=2.2.0
+numpy>=1.26.0
+joblib>=1.3.0
+openpyxl>=3.1.0      # company ICP workbooks
+tabulate>=0.9.0      # Markdown tables in reports/real/REPORT.md
+pytest>=8.3.0
+
+# The application (ScrapTrust web app + API + Copilot) has its own environment:
+#   app/backend/requirements.txt, requirements-copilot.txt, requirements-phase-b.txt
+# Its venv also needs pandas, numpy, joblib (already present) to load models/real/.

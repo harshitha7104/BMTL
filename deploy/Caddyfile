@@ -1,0 +1,42 @@
+# HTTPS front door. Caddy obtains and renews the TLS certificate automatically for BMTL_DOMAIN.
+{
+	servers {
+		timeouts {
+			read_header 10s
+			idle 60s
+		}
+	}
+}
+
+{$BMTL_DOMAIN} {
+	encode zstd gzip
+	request_body {
+		max_size 250MB
+	}
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		-Server
+		-X-Powered-By
+	}
+	reverse_proxy app:8000 {
+		header_up X-Forwarded-For {remote_host}
+		transport http {
+			read_timeout 300s
+			write_timeout 300s
+		}
+	}
+	log {
+		output file /data/access.log {
+			roll_size 100MiB
+			roll_keep 30
+		}
+		# Security audit I-05: query strings carry search terms and link tokens; keep only the path in the access log.
+		# (Cookie and Authorization headers are already redacted by Caddy by default.)
+		format filter {
+			wrap json
+			fields {
+				request>uri regexp \?.* ?[redacted]
+			}
+		}
+	}
+}

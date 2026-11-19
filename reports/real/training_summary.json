@@ -1,0 +1,423 @@
+{
+  "trained_on": "2026-11-17",
+  "banner": "REAL COMPANY DATA \u2014 9 ICP-REFERENCED SAMPLES; SMALL-SAMPLE ESTIMATES, NOT A VALIDATED METHOD",
+  "data": "data\\processed\\real",
+  "evaluation": "leave-one-sample-out",
+  "element_summary": [
+    {
+      "basis": "factory",
+      "element": "Al",
+      "n_samples": 8,
+      "n_readings": 12,
+      "mae_raw_gun": 0.428,
+      "mae_corrected": 0.775,
+      "mae_per_sample_corrected": 0.412,
+      "mae_linear_augmented": 0.775,
+      "selected_stage": "passthrough",
+      "mae_selected": 0.428,
+      "max_abs_err_corrected": 0.888,
+      "band_coverage": 0.917,
+      "mean_band_halfwidth": 0.863,
+      "ood_sample6_err": 0.21
+    },
+    {
+      "basis": "factory",
+      "element": "Co",
+      "n_samples": 8,
+      "n_readings": 12,
+      "mae_raw_gun": 5.0,
+      "mae_corrected": 1.61,
+      "mae_per_sample_corrected": 1.812,
+      "mae_linear_augmented": 1.608,
+      "selected_stage": "linear",
+      "mae_selected": 1.61,
+      "max_abs_err_corrected": 3.975,
+      "band_coverage": 0.833,
+      "mean_band_halfwidth": 3.908,
+      "ood_sample6_err": 12.375
+    },
+    {
+      "basis": "factory",
+      "element": "Cu",
+      "n_samples": 8,
+      "n_readings": 12,
+      "mae_raw_gun": 0.643,
+      "mae_corrected": 0.835,
+      "mae_per_sample_corrected": 0.553,
+      "mae_linear_augmented": 0.834,
+      "selected_stage": "passthrough",
+      "mae_selected": 0.643,
+      "max_abs_err_corrected": 2.269,
+      "band_coverage": 0.833,
+      "mean_band_halfwidth": 1.981,
+      "ood_sample6_err": 0.004
+    },
+    {
+      "basis": "factory",
+      "element": "Fe",
+      "n_samples": 8,
+      "n_readings": 12,
+      "mae_raw_gun": 1.459,
+      "mae_corrected": 0.406,
+      "mae_per_sample_corrected": 0.341,
+      "mae_linear_augmented": 0.398,
+      "selected_stage": "linear",
+      "mae_selected": 0.406,
+      "max_abs_err_corrected": 0.97,
+      "band_coverage": 0.833,
+      "mean_band_halfwidth": 1.679,
+      "ood_sample6_err": 0.339
+    },
+    {
+      "basis": "factory",
+      "element": "Mn",
+      "n_samples": 8,
+      "n_readings": 12,
+      "mae_raw_gun": 1.354,
+      "mae_corrected": 0.459,
+      "mae_per_sample_corrected": 0.473,
+      "mae_linear_augmented": 0.456,
+      "selected_stage": "linear",
+      "mae_selected": 0.459,
+      "max_abs_err_corrected": 1.252,
+      "band_coverage": 0.75,
+      "mean_band_halfwidth": 1.239,
+      "ood_sample6_err": 0.363
+    },
+    {
+      "basis": "factory",
+      "element": "Ni",
+      "n_samples": 8,
+      "n_readings": 12,
+      "mae_raw_gun": 6.546,
+      "mae_corrected": 0.681,
+      "mae_per_sample_corrected": 0.761,
+      "mae_linear_augmented": 0.765,
+      "selected_stage": "proportional",
+      "mae_selected": 0.681,
+      "max_abs_err_corrected": 1.77,
+      "band_coverage": 0.917,
+      "mean_band_halfwidth": 1.784,
+      "ood_sample6_err": NaN
+    },
+    {
+      "basis": "factory",
+      "element": "P",
+      "n_samples": 8,
+      "n_readings": 12,
+      "mae_raw_gun": 0.818,
+      "mae_corrected": 0.158,
+      "mae_per_sample_corrected": 0.162,
+      "mae_linear_augmented": 0.166,
+      "selected_stage": "linear",
+      "mae_selected": 0.158,
+      "max_abs_err_corrected": 0.6,
+      "band_coverage": 0.833,
+      "mean_band_halfwidth": 1.26,
+      "ood_sample6_err": 0.774
+    },
+    {
+      "basis": "type_standardised",
+      "element": "Al",
+      "n_samples": 8,
+      "n_readings": 18,
+      "mae_raw_gun": 1.104,
+      "mae_corrected": 0.687,
+      "mae_per_sample_corrected": 0.691,
+      "mae_linear_augmented": 0.684,
+      "selected_stage": "linear",
+      "mae_selected": 0.687,
+      "max_abs_err_corrected": 1.903,
+      "band_coverage": 0.889,
+      "mean_band_halfwidth": 1.771,
+      "ood_sample6_err": 0.211
+    },
+    {
+      "basis": "type_standardised",
+      "element": "Co",
+      "n_samples": 8,
+      "n_readings": 18,
+      "mae_raw_gun": 1.272,
+      "mae_corrected": 1.658,
+      "mae_per_sample_corrected": 1.304,
+      "mae_linear_augmented": 1.668,
+      "selected_stage": "passthrough",
+      "mae_selected": 1.272,
+      "max_abs_err_corrected": 2.376,
+      "band_coverage": 0.889,
+      "mean_band_halfwidth": 2.309,
+      "ood_sample6_err": 12.236
+    },
+    {
+      "basis": "type_standardised",
+      "element": "Cu",
+      "n_samples": 8,
+      "n_readings": 18,
+      "mae_raw_gun": 0.367,
+      "mae_corrected": 0.523,
+      "mae_per_sample_corrected": 0.351,
+      "mae_linear_augmented": 0.524,
+      "selected_stage": "passthrough",
+      "mae_selected": 0.367,
+      "max_abs_err_corrected": 1.301,
+      "band_coverage": 0.889,
+      "mean_band_halfwidth": 1.179,
+      "ood_sample6_err": 0.646
+    },
+    {
+      "basis": "type_standardised",
+      "element": "Fe",
+      "n_samples": 8,
+      "n_readings": 18,
+      "mae_raw_gun": 0.217,
+      "mae_corrected": 0.249,
+      "mae_per_sample_corrected": 0.2,
+      "mae_linear_augmented": 0.249,
+      "selected_stage": "passthrough",
+      "mae_selected": 0.217,
+      "max_abs_err_corrected": 0.597,
+      "band_coverage": 0.944,
+      "mean_band_halfwidth": 0.445,
+      "ood_sample6_err": 0.34
+    },
+    {
+      "basis": "type_standardised",
+      "element": "Mn",
+      "n_samples": 8,
+      "n_readings": 18,
+      "mae_raw_gun": 0.479,
+      "mae_corrected": 0.428,
+      "mae_per_sample_corrected": 0.33,
+      "mae_linear_augmented": 0.448,
+      "selected_stage": "proportional",
+      "mae_selected": 0.428,
+      "max_abs_err_corrected": 1.418,
+      "band_coverage": 0.833,
+      "mean_band_halfwidth": 1.249,
+      "ood_sample6_err": 0.212
+    },
+    {
+      "basis": "type_standardised",
+      "element": "Ni",
+      "n_samples": 8,
+      "n_readings": 18,
+      "mae_raw_gun": 1.043,
+      "mae_corrected": 0.878,
+      "mae_per_sample_corrected": 0.833,
+      "mae_linear_augmented": 1.008,
+      "selected_stage": "proportional",
+      "mae_selected": 0.878,
+      "max_abs_err_corrected": 1.915,
+      "band_coverage": 0.889,
+      "mean_band_halfwidth": 1.902,
+      "ood_sample6_err": 0.511
+    },
+    {
+      "basis": "type_standardised",
+      "element": "P",
+      "n_samples": 8,
+      "n_readings": 18,
+      "mae_raw_gun": 0.144,
+      "mae_corrected": 0.202,
+      "mae_per_sample_corrected": 0.142,
+      "mae_linear_augmented": 0.203,
+      "selected_stage": "passthrough",
+      "mae_selected": 0.144,
+      "max_abs_err_corrected": 0.438,
+      "band_coverage": 0.889,
+      "mean_band_halfwidth": 0.417,
+      "ood_sample6_err": 0.148
+    }
+  ],
+  "lithium": [
+    {
+      "basis": "factory",
+      "mae": 0.43,
+      "max_err": 0.893,
+      "n": 12
+    },
+    {
+      "basis": "type_standardised",
+      "mae": 0.431,
+      "max_err": 0.88,
+      "n": 18
+    }
+  ],
+  "lithium_models": {
+    "factory": {
+      "k_li_per_metal_atom": 0.8495783561700748,
+      "band_90": 0.8560483226311567,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "method": "per_metal",
+      "loso_mae_one_factor": 0.5380325142268213,
+      "loso_mae_per_metal": 0.43043343507088744,
+      "k_per_metal": {
+        "Ni": 0.95905,
+        "Co": 0.77947,
+        "Mn": 0.78462,
+        "FeP": 0.89266
+      }
+    },
+    "type_standardised": {
+      "k_li_per_metal_atom": 0.8700980253714314,
+      "band_90": 0.7490331660738605,
+      "fit_samples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "B",
+        "C"
+      ],
+      "method": "per_metal",
+      "loso_mae_one_factor": 0.5019243451281012,
+      "loso_mae_per_metal": 0.4309984440879355,
+      "k_per_metal": {
+        "Ni": 0.9456,
+        "Co": 0.81709,
+        "Mn": 0.83577,
+        "FeP": 0.89184
+      }
+    }
+  },
+  "detector": {
+    "n_labelled_readings": 40,
+    "n_groups": 28,
+    "classes": {
+      "NMC": 26,
+      "LCO": 6,
+      "INSTRUMENT_MODE_ARTIFACT": 4,
+      "LFP": 2,
+      "NOT_BLACK_MASS_LEAD": 2
+    },
+    "accuracy_on_decided": 1.0,
+    "abstention_rate": 0.025,
+    "per_class_recall": {
+      "INSTRUMENT_MODE_ARTIFACT": 0.75,
+      "LCO": 1.0,
+      "LFP": 1.0,
+      "NMC": 1.0,
+      "NOT_BLACK_MASS_LEAD": 1.0
+    },
+    "evaluation": "leave-one-group-out (all readings of one physical sample / bag held out together)",
+    "variant_comparison": {
+      "real_only": {
+        "accuracy_on_decided": 1.0,
+        "abstention_rate": 0.025,
+        "extra_training_rows": 0,
+        "per_class_recall": {
+          "INSTRUMENT_MODE_ARTIFACT": 0.75,
+          "LCO": 1.0,
+          "LFP": 1.0,
+          "NMC": 1.0,
+          "NOT_BLACK_MASS_LEAD": 1.0
+        }
+      },
+      "real+augmented": {
+        "accuracy_on_decided": 1.0,
+        "abstention_rate": 0.025,
+        "extra_training_rows": 800,
+        "per_class_recall": {
+          "INSTRUMENT_MODE_ARTIFACT": 0.75,
+          "LCO": 1.0,
+          "LFP": 1.0,
+          "NMC": 1.0,
+          "NOT_BLACK_MASS_LEAD": 1.0
+        }
+      },
+      "real+synthetic_v2": {
+        "accuracy_on_decided": 1.0,
+        "abstention_rate": 0.15,
+        "extra_training_rows": 705,
+        "per_class_recall": {
+          "INSTRUMENT_MODE_ARTIFACT": 0.75,
+          "LCO": 0.6666666666666666,
+          "LFP": 1.0,
+          "NMC": 0.8846153846153846,
+          "NOT_BLACK_MASS_LEAD": 1.0
+        }
+      },
+      "real+augmented+synthetic_v2": {
+        "accuracy_on_decided": 1.0,
+        "abstention_rate": 0.125,
+        "extra_training_rows": 1505,
+        "per_class_recall": {
+          "INSTRUMENT_MODE_ARTIFACT": 0.75,
+          "LCO": 0.6666666666666666,
+          "LFP": 1.0,
+          "NMC": 0.9230769230769231,
+          "NOT_BLACK_MASS_LEAD": 1.0
+        }
+      }
+    },
+    "selected_variant": "real_only"
+  },
+  "company_v021_gap": {
+    "Al": 0.632,
+    "Co": 2.306,
+    "Cu": 0.582,
+    "Fe": 0.609,
+    "Li": 0.258,
+    "Mn": 0.475,
+    "Ni": 0.858,
+    "P": 0.329
+  },
+  "inferred_labels": [
+    {
+      "record": "xsort_25",
+      "inferred_label": "NO_TRANSITION_METAL_SIGNAL",
+      "confidence": 0.36
+    },
+    {
+      "record": "xsort_29",
+      "inferred_label": "NOT_BLACK_MASS_LEAD",
+      "confidence": 0.34
+    },
+    {
+      "record": "xsort_41",
+      "inferred_label": "NMC",
+      "confidence": 0.88
+    },
+    {
+      "record": "xsort_45",
+      "inferred_label": "NMC",
+      "confidence": 0.55
+    },
+    {
+      "record": "xsort_47",
+      "inferred_label": "NMC",
+      "confidence": 0.91
+    },
+    {
+      "record": "xsort_58",
+      "inferred_label": "NMC",
+      "confidence": 0.93
+    },
+    {
+      "record": "xsort_59",
+      "inferred_label": "NMC",
+      "confidence": 0.8
+    },
+    {
+      "record": "xsort_60",
+      "inferred_label": "NMC",
+      "confidence": 0.69
+    },
+    {
+      "record": "xsort_61",
+      "inferred_label": "NMC",
+      "confidence": 0.79
+    }
+  ]
+}

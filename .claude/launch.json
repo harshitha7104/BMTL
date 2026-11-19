@@ -1,0 +1,21 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "app",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "app/run_scraptrust.ps1",
+        "-NoBrowser",
+        "-Port",
+        "8020"
+      ],
+      "port": 8020,
+      "url": "http://127.0.0.1:8020"
+    }
+  ]
+}

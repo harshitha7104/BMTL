@@ -1,0 +1,7 @@
+# Phase B pretrained visual embeddings and unsupervised clustering.
+# On Windows with CUDA 12.8, install torch/torchvision from the CUDA wheel index:
+# python -m pip install torch==2.7.1 torchvision==0.22.1 --extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.7.1
+torchvision==0.22.1
+scikit-learn>=1.6,<2
+matplotlib>=3.9,<4

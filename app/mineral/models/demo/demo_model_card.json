@@ -1,0 +1,66 @@
+{
+  "created": "2026-10-09T09:09:19",
+  "random_state": 42,
+  "banner": "DEMO MODEL \u2014 trained using pseudo-labels generated from the spectral rule engine. These labels are not ground truth.",
+  "label_source": "spectroscopy_rule_engine",
+  "classes": [
+    "ankerite / calcite / crocidolite_asbestos / dolomite / siderite",
+    "ankerite / calcite / dolomite / siderite",
+    "calcite / chrysotile_asbestos / crocidolite_asbestos / dolomite / siderite / talc",
+    "calcite / chrysotile_asbestos / dolomite / siderite / talc"
+  ],
+  "excluded_classes": {},
+  "validation": {
+    "metric_name": "Pseudo-label validation performance (NOT mineral accuracy)",
+    "n_samples": 100,
+    "n_rocks": 29,
+    "n_splits": 5,
+    "grouping": "rock_id (all replicates and surfaces of a rock stay in the same fold)",
+    "no_rock_in_train_and_validation": true,
+    "accuracy": 0.66,
+    "balanced_accuracy": 0.6450079744816587,
+    "macro_f1": 0.630903182732451,
+    "majority_class_baseline_accuracy": 0.38,
+    "labels": [
+      "ankerite / calcite / crocidolite_asbestos / dolomite / siderite",
+      "ankerite / calcite / dolomite / siderite",
+      "calcite / chrysotile_asbestos / crocidolite_asbestos / dolomite / siderite / talc",
+      "calcite / chrysotile_asbestos / dolomite / siderite / talc"
+    ],
+    "confusion_matrix": [
+      [
+        11,
+        4,
+        0,
+        0
+      ],
+      [
+        6,
+        31,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        13,
+        7
+      ],
+      [
+        3,
+        5,
+        6,
+        11
+      ]
+    ],
+    "per_class_f1": {
+      "ankerite / calcite / crocidolite_asbestos / dolomite / siderite": 0.595,
+      "ankerite / calcite / dolomite / siderite": 0.795,
+      "calcite / chrysotile_asbestos / crocidolite_asbestos / dolomite / siderite / talc": 0.634,
+      "calcite / chrysotile_asbestos / dolomite / siderite / talc": 0.5
+    }
+  },
+  "features": "continuum-removed 10 nm vector -> PCA(10) -> RandomForest(300, balanced)",
+  "n_training_samples": 100,
+  "source_csv_sha256": "a43ef17bb707f450e01b8f34c2ef7dc74e338ef4ced4ddc0505d6f03a6887be7"
+}

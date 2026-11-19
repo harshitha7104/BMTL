@@ -1,0 +1,69 @@
+{
+ "leave_one_out": {
+  "images": 11521,
+  "top1_agreement": 0.9234,
+  "per_category_agreement": {
+   "E-waste": 0.922,
+   "automobile wastes": 0.931,
+   "battery waste": 0.958,
+   "glass waste": 0.906,
+   "light bulbs": 0.943,
+   "metal waste": 0.876,
+   "organic waste": 0.956,
+   "paper waste": 0.947,
+   "plastic waste": 0.903
+  },
+  "agreement_by_confidence_band": {
+   "strong": {
+    "images": 9783,
+    "share_of_images": 0.849,
+    "agreement": 0.974
+   },
+   "moderate": {
+    "images": 1388,
+    "share_of_images": 0.12,
+    "agreement": 0.687
+   },
+   "weak": {
+    "images": 350,
+    "share_of_images": 0.03,
+    "agreement": 0.443
+   }
+  },
+  "most_confused_pairs": [
+   {
+    "true": "metal waste",
+    "predicted": "automobile wastes",
+    "count": 60
+   },
+   {
+    "true": "glass waste",
+    "predicted": "plastic waste",
+    "count": 56
+   },
+   {
+    "true": "paper waste",
+    "predicted": "plastic waste",
+    "count": 56
+   },
+   {
+    "true": "metal waste",
+    "predicted": "plastic waste",
+    "count": 47
+   },
+   {
+    "true": "automobile wastes",
+    "predicted": "metal waste",
+    "count": 43
+   }
+  ],
+  "seconds": 1.5
+ },
+ "augmented_live": {
+  "images": 300,
+  "top1_agreement": 0.9,
+  "embed_latency_ms_median": 23.0,
+  "embed_latency_ms_p95": 142.4,
+  "device": "cuda"
+ }
+}

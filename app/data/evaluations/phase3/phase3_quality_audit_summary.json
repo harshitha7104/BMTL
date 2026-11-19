@@ -1,0 +1,25 @@
+{
+  "audit_version": "automated-image-audit-v1",
+  "record_count": 11521,
+  "quality_status_counts": {
+    "PASS": 8290,
+    "WARN": 3231
+  },
+  "quality_flag_counts": {
+    "below_existing_quality_gate_minimum_resolution": 2773,
+    "extreme_aspect_ratio": 3,
+    "low_contrast_existing_quality_gate_threshold": 47,
+    "overexposed_existing_quality_gate_threshold": 560,
+    "possible_excessive_blur_heuristic": 15,
+    "suspiciously_low_information": 3,
+    "too_dark_existing_quality_gate_threshold": 88
+  },
+  "usable_visual_evidence_count": 11521,
+  "not_automatically_usable_count": 0,
+  "manual_review_recommended_count": 0,
+  "threshold_notes": [
+    "Brightness and contrast warning thresholds reuse ImageQualityService concepts (0.15/0.85 and normalized contrast 0.1).",
+    "Blur, entropy, grayscale, aspect-ratio, and low-information checks are automated heuristics, not validated material judgments.",
+    "PASS/WARN/NEEDS_REVIEW never deletes or alters source files; FAIL means the record should not be used as visual evidence until reviewed."
+  ]
+}

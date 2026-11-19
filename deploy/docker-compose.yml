@@ -1,0 +1,66 @@
+# Production stack: Caddy (automatic HTTPS, HTTP->HTTPS, security headers) -> BMTL app (N workers) -> Redis.
+#   cp deploy/production.env.example deploy/.env.production   # fill in, keep it secret (never commit it)
+#   docker compose -f deploy/docker-compose.yml --env-file deploy/.env.production up -d --build
+#   docker compose -f deploy/docker-compose.yml exec app python scripts/manage_users.py add <admin> --role admin
+services:
+  app:
+    build: { context: .., dockerfile: deploy/Dockerfile }
+    image: bmtl:2026.11
+    restart: unless-stopped
+    env_file: .env.production
+    environment:
+      REDIS_URL: redis://redis:6379/0
+      TRUSTED_HOSTS: ${BMTL_DOMAIN}      # required in production: the server refuses other Host headers (DNS rebinding)
+      FORWARDED_ALLOW_IPS: "*"          # only the proxy can reach this port (no published ports below)
+    volumes:
+      - bmtl-data:/data
+    read_only: true                     # code and models are immutable; only /data and /tmp are writable
+    tmpfs: ["/tmp:size=512m"]
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    pids_limit: 512
+    mem_limit: ${APP_MEM_LIMIT:-12g}
+    depends_on: [redis]
+    networks: [internal]
+    # no "ports:" on purpose: the app is reachable only through the proxy
+
+  proxy:
+    image: caddy:2.8.4-alpine
+    restart: unless-stopped
+    ports: ["80:80", "443:443"]
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    environment:
+      BMTL_DOMAIN: ${BMTL_DOMAIN}
+    security_opt: ["no-new-privileges:true"]
+    depends_on: [app]
+    networks: [internal, public]
+
+  redis:
+    image: redis:7.4.1-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--save", "", "--appendonly", "no", "--protected-mode", "yes"]
+    read_only: true
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    networks: [internal]
+
+  housekeeping:                         # retention + prune once a day
+    image: bmtl:2026.11
+    env_file: .env.production
+    volumes: ["bmtl-data:/data"]
+    read_only: true
+    entrypoint: ["sh", "-c", "while true; do python scripts/housekeeping.py; sleep 86400; done"]
+    networks: [internal]
+    depends_on: [app]
+
+volumes:
+  bmtl-data:
+  caddy-data:
+  caddy-config:
+
+networks:
+  internal: { internal: true }
+  public: {}

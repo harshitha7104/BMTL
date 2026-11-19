@@ -1,0 +1,5 @@
+# Development and test tools only (never installed in the production image)
+-r requirements.txt
+pytest>=9.0.3
+pytest-asyncio>=1.5.0
+pip-audit>=2.7

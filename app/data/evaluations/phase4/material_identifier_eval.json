@@ -1,0 +1,84 @@
+{
+ "images": 450,
+ "agreement_with_folder_category": 0.74,
+ "per_category": {
+  "E-waste": 0.58,
+  "automobile wastes": 0.7,
+  "battery waste": 0.86,
+  "glass waste": 0.56,
+  "light bulbs": 0.8,
+  "metal waste": 0.82,
+  "organic waste": 0.88,
+  "paper waste": 0.66,
+  "plastic waste": 0.8
+ },
+ "by_confidence": {
+  "high": {
+   "images": 297,
+   "agreement": 0.859
+  },
+  "low": {
+   "images": 40,
+   "agreement": 0.475
+  },
+  "moderate": {
+   "images": 113,
+   "agreement": 0.522
+  }
+ },
+ "materials_named_in_metal_waste": {
+  "Steel (ferrous)": 13,
+  "Rusty steel / iron": 11,
+  "Plastic": 7,
+  "Copper": 4,
+  "Aluminium": 4,
+  "Lead": 4,
+  "Brass": 3,
+  "Organic waste": 2,
+  "Insulated copper wire / cable": 2
+ },
+ "top_confusions": [
+  {
+   "folder": "glass waste",
+   "named": "Plastic",
+   "count": 11
+  },
+  {
+   "folder": "paper waste",
+   "named": "Plastic",
+   "count": 8
+  },
+  {
+   "folder": "metal waste",
+   "named": "Plastic",
+   "count": 7
+  },
+  {
+   "folder": "E-waste",
+   "named": "Lithium-ion batteries",
+   "count": 6
+  },
+  {
+   "folder": "E-waste",
+   "named": "Insulated copper wire / cable",
+   "count": 6
+  },
+  {
+   "folder": "E-waste",
+   "named": "Lead-acid batteries",
+   "count": 5
+  },
+  {
+   "folder": "automobile wastes",
+   "named": "Aluminium",
+   "count": 4
+  },
+  {
+   "folder": "glass waste",
+   "named": "Automotive parts",
+   "count": 4
+  }
+ ],
+ "model": "openai/clip-vit-base-patch16",
+ "seconds": 70.8
+}

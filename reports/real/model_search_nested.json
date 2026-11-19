@@ -1,0 +1,325 @@
+{
+  "banner": "REAL COMPANY DATA - 8 in-domain samples; nested leave-one-sample-out",
+  "elements": {
+    "factory:Ni": {
+      "nested_mae": 0.6809298603564704,
+      "chosen_per_fold": [
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional"
+      ],
+      "flat_loso_mae": {
+        "passthrough": 6.5464,
+        "linear": 0.7589,
+        "proportional": 0.6809,
+        "loglinear": 0.9805,
+        "matrix": 1.5745
+      }
+    },
+    "factory:Co": {
+      "nested_mae": 2.0368576731516908,
+      "chosen_per_fold": [
+        "matrix",
+        "proportional",
+        "linear",
+        "proportional",
+        "proportional",
+        "matrix",
+        "proportional",
+        "linear"
+      ],
+      "flat_loso_mae": {
+        "passthrough": 4.9999,
+        "linear": 1.6102,
+        "proportional": 1.5737,
+        "loglinear": 2.235,
+        "matrix": 1.5307
+      }
+    },
+    "factory:Mn": {
+      "nested_mae": 0.49277706910452435,
+      "chosen_per_fold": [
+        "loglinear",
+        "proportional",
+        "loglinear",
+        "loglinear",
+        "loglinear",
+        "loglinear",
+        "loglinear",
+        "loglinear"
+      ],
+      "flat_loso_mae": {
+        "passthrough": 1.354,
+        "linear": 0.4589,
+        "proportional": 0.4634,
+        "loglinear": 0.3441,
+        "matrix": 0.9111
+      }
+    },
+    "factory:Fe": {
+      "nested_mae": 1.4951423373655615,
+      "chosen_per_fold": [
+        "linear",
+        "linear",
+        "linear",
+        "linear",
+        "linear",
+        "linear",
+        "linear",
+        "passthrough"
+      ],
+      "flat_loso_mae": {
+        "passthrough": 1.4593,
+        "linear": 0.4059,
+        "proportional": 1.0283,
+        "loglinear": 1.5888,
+        "matrix": 1.3151
+      }
+    },
+    "factory:Cu": {
+      "nested_mae": 0.7918309920463292,
+      "chosen_per_fold": [
+        "passthrough",
+        "loglinear",
+        "passthrough",
+        "loglinear",
+        "loglinear",
+        "loglinear",
+        "loglinear",
+        "passthrough"
+      ],
+      "flat_loso_mae": {
+        "passthrough": 0.6434,
+        "linear": 0.8353,
+        "proportional": 0.7763,
+        "loglinear": 0.6079,
+        "matrix": 0.9581
+      }
+    },
+    "factory:Al": {
+      "nested_mae": 0.4744689077111701,
+      "chosen_per_fold": [
+        "passthrough",
+        "passthrough",
+        "passthrough",
+        "passthrough",
+        "passthrough",
+        "proportional",
+        "passthrough",
+        "passthrough"
+      ],
+      "flat_loso_mae": {
+        "passthrough": 0.4277,
+        "linear": 0.7753,
+        "proportional": 0.5601,
+        "loglinear": 0.696,
+        "matrix": 1.0157
+      }
+    },
+    "factory:P": {
+      "nested_mae": 8.215504763476972,
+      "chosen_per_fold": [
+        "linear",
+        "linear",
+        "linear",
+        "linear",
+        "linear",
+        "linear",
+        "passthrough",
+        "loglinear"
+      ],
+      "flat_loso_mae": {
+        "passthrough": 0.8177,
+        "linear": 0.1584,
+        "proportional": 1.457,
+        "loglinear": 8.3315,
+        "matrix": 1.0345
+      }
+    },
+    "type_standardised:Ni": {
+      "nested_mae": 0.8777072066573415,
+      "chosen_per_fold": [
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional"
+      ],
+      "flat_loso_mae": {
+        "passthrough": 1.0434,
+        "linear": 0.9975,
+        "proportional": 0.8777,
+        "loglinear": 1.0305,
+        "matrix": 1.5503
+      }
+    },
+    "type_standardised:Co": {
+      "nested_mae": 1.978737206501524,
+      "chosen_per_fold": [
+        "proportional",
+        "passthrough",
+        "matrix",
+        "passthrough",
+        "passthrough",
+        "passthrough",
+        "passthrough",
+        "loglinear"
+      ],
+      "flat_loso_mae": {
+        "passthrough": 1.2717,
+        "linear": 1.6576,
+        "proportional": 1.6044,
+        "loglinear": 6.9949,
+        "matrix": 1.5733
+      }
+    },
+    "type_standardised:Mn": {
+      "nested_mae": 0.4283012506317614,
+      "chosen_per_fold": [
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional"
+      ],
+      "flat_loso_mae": {
+        "passthrough": 0.4787,
+        "linear": 0.4483,
+        "proportional": 0.4283,
+        "loglinear": 0.4445,
+        "matrix": 0.8073
+      }
+    },
+    "type_standardised:Fe": {
+      "nested_mae": 0.21690000000000023,
+      "chosen_per_fold": [
+        "passthrough",
+        "passthrough",
+        "passthrough",
+        "passthrough",
+        "passthrough",
+        "passthrough",
+        "passthrough",
+        "passthrough"
+      ],
+      "flat_loso_mae": {
+        "passthrough": 0.2169,
+        "linear": 0.2494,
+        "proportional": 0.291,
+        "loglinear": 12.043,
+        "matrix": 0.7982
+      }
+    },
+    "type_standardised:Cu": {
+      "nested_mae": 0.6703127529682519,
+      "chosen_per_fold": [
+        "passthrough",
+        "passthrough",
+        "passthrough",
+        "passthrough",
+        "passthrough",
+        "proportional",
+        "passthrough",
+        "matrix"
+      ],
+      "flat_loso_mae": {
+        "passthrough": 0.3674,
+        "linear": 0.5232,
+        "proportional": 0.4415,
+        "loglinear": 0.5119,
+        "matrix": 0.7512
+      }
+    },
+    "type_standardised:Al": {
+      "nested_mae": 0.8382030925275494,
+      "chosen_per_fold": [
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "proportional",
+        "matrix"
+      ],
+      "flat_loso_mae": {
+        "passthrough": 1.1037,
+        "linear": 0.6865,
+        "proportional": 0.5333,
+        "loglinear": 0.5971,
+        "matrix": 0.9968
+      }
+    },
+    "type_standardised:P": {
+      "nested_mae": 0.15903670806764447,
+      "chosen_per_fold": [
+        "passthrough",
+        "passthrough",
+        "linear",
+        "passthrough",
+        "passthrough",
+        "passthrough",
+        "passthrough",
+        "passthrough"
+      ],
+      "flat_loso_mae": {
+        "passthrough": 0.1436,
+        "linear": 0.202,
+        "proportional": 0.2839,
+        "loglinear": 0.2608,
+        "matrix": 0.6509
+      }
+    }
+  },
+  "lithium": {
+    "factory": {
+      "nested_mae": 0.43043343507088744,
+      "chosen_per_fold": [
+        "lix_per_metal",
+        "lix_per_metal",
+        "lix_per_metal",
+        "lix_per_metal",
+        "lix_per_metal",
+        "lix_per_metal",
+        "lix_per_metal",
+        "lix_per_metal"
+      ],
+      "flat_loso_mae": {
+        "lix": 0.538,
+        "lix_affine": 0.7484,
+        "lix_per_metal": 0.4304,
+        "lix_by_family": 0.544
+      }
+    },
+    "type_standardised": {
+      "nested_mae": 0.4309984440879355,
+      "chosen_per_fold": [
+        "lix_per_metal",
+        "lix_per_metal",
+        "lix_per_metal",
+        "lix_per_metal",
+        "lix_per_metal",
+        "lix_per_metal",
+        "lix_per_metal",
+        "lix_per_metal"
+      ],
+      "flat_loso_mae": {
+        "lix": 0.5019,
+        "lix_affine": 0.6126,
+        "lix_per_metal": 0.431,
+        "lix_by_family": 0.5071
+      }
+    }
+  }
+}

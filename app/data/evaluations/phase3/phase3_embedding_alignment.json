@@ -1,0 +1,24 @@
+{
+  "manifest_valid_image_count": 11521,
+  "embedding_path_row_count": 11521,
+  "embedding_array_shape": [
+    11521,
+    384
+  ],
+  "status_array_length": 11521,
+  "embedded_status_count": 11521,
+  "cluster_assignment_count": 11521,
+  "aligned_valid_path_count": 11521,
+  "missing_manifest_paths": [],
+  "extra_embedding_paths": [],
+  "not_successfully_embedded_paths": [],
+  "duplicate_embedding_paths": [],
+  "norm_mean": 1.0,
+  "norm_min": 0.9999998807907104,
+  "norm_max": 1.0000001192092896,
+  "within_unit_norm_tolerance_count": 11521,
+  "unit_norm_tolerance": 0.02,
+  "cluster_assignment_missing_paths": [],
+  "cluster_assignment_extra_paths": [],
+  "verified": true
+}

@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment files (API keys live in app/backend/.env)
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+logs/
+*.log
+
+# Company data: confidential, never pushed to a public remote
+data/raw/
+data/interim/
+data/processed/
+
+# Application (ScrapTrust) runtime and large data
+app/node_modules/
+app/dist/
+app/wastes/
+app/data/embeddings/
+app/data/raw/
+app/backend/data/
+
+# Archive of the synthetic-data era (kept locally, 1.2 GB)
+archive/
+
+# Databases, caches, build artifacts
+*.db
+*.sqlite3
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+*.egg-info/
+test_files/
+
+# Self-hosted AI runtime and models (large binaries)
+tools/

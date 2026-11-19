@@ -1,0 +1,24 @@
+# Keep secrets, user data, company raw data and dev environments out of the image build context.
+**/.env
+**/.env.*
+!**/.env.example
+**/venv
+**/.venv
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+**/*.pyc
+.git
+archive
+data
+reports
+docs
+app/wastes
+app/dist
+app/backend/data
+app/backend/tests
+app/mineral/.venv
+app/mineral/outputs
+app/mineral/logs
+*.zip
+*.log

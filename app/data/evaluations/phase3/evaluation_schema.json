@@ -1,0 +1,54 @@
+{
+  "schema_version": "scrap-ai-evaluation-v1",
+  "ground_truth_policy": "Only compute label-dependent metrics when the corresponding field is verified; source labels alone are insufficient.",
+  "classification": {
+    "metrics": [
+      "accuracy",
+      "precision_macro",
+      "recall_macro",
+      "f1_macro",
+      "confusion_matrix"
+    ],
+    "requires": "verified_ground_truth and fixed label taxonomy"
+  },
+  "retrieval_similarity": {
+    "metrics": [
+      "precision_at_k",
+      "recall_at_k",
+      "mean_average_precision",
+      "duplicate_leakage_rate"
+    ],
+    "requires": "human-reviewed relevance judgments and duplicate-group-aware splits"
+  },
+  "evidence_assessment": {
+    "fields": [
+      "observed_claim_correctness",
+      "inferred_claim_correctness",
+      "unsupported_claim_count",
+      "unknown_handling_correct",
+      "evidence_link_validity"
+    ],
+    "requires": "expert-reviewed claim/evidence annotations; do not infer from source image class labels"
+  },
+  "quality_gate": {
+    "metrics": [
+      "quality_failure_recall",
+      "quality_failure_precision",
+      "false_acceptance_rate",
+      "false_rejection_rate",
+      "manual_review_trigger_recall"
+    ],
+    "requires": "human quality adjudication under a documented protocol"
+  },
+  "trust_traceability": {
+    "fields": [
+      "source_traceability",
+      "reproducibility",
+      "model_version_traceability",
+      "evidence_to_claim_linkage",
+      "limitations_present"
+    ],
+    "requires": "auditable provenance and review records"
+  },
+  "current_phase3_metric_limitations": "No verified ground-truth labels or human relevance judgments were located; do not report supervised accuracy, retrieval relevance, or evidence correctness yet."
+}
